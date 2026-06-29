@@ -16,14 +16,11 @@ from zoneinfo import ZoneInfo
 # ============================
 # Step 2: Load Datasets
 # ============================
+ 
 
-play_store_data = pd.read_csv(
-    r"C:\Users\Vansh Sharma\Downloads\Play Store Data (1).csv"
-)
+play_store_data = pd.read_csv("Play Store Data (1).csv")
 
-review = pd.read_csv(
-    r"C:\Users\Vansh Sharma\Downloads\User Reviews (1).csv"
-)
+review = pd.read_csv("User Reviews (1).csv")
 
 
 print("Datasets Loaded Successfully")

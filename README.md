@@ -247,26 +247,7 @@ Google_Play_Store_Analysis/
 ├── requirements.txt
 └── Images/
 ```
-
----
-
-## 15. GitHub Repository
-
-GitHub Repository Link
-
----
-
-## 16. Live Dashboard
-
-Streamlit Dashboard Link
-
----
-
-## 17. Dataset
-
-Google Play Store Dataset (Kaggle)
-
----
+ 
 
 ## 📌 Note
 

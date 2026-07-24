@@ -1,256 +1,361 @@
- # 📱 Google Play Store Analytics Dashboard
+# 📱 Google Play Store Analytics Dashboard
 
-## 1. Project Title
+<p align="center">
 
-Google Play Store Analytics Dashboard Using Python, Plotly & Streamlit
+### 🚀 End-to-End Data Analytics Project using Python, Plotly & Streamlit
 
----
-
-## 2. Project Overview
-
-This project is an interactive **Google Play Store Analytics Dashboard** developed using **Python, Pandas, NumPy, Plotly, and Streamlit**. It analyzes Google Play Store applications to uncover insights into app ratings, installs, reviews, pricing, categories, and user engagement.
-
-The project also implements **advanced business rules**, including dynamic filtering, multilingual category labels, conditional formatting, and **time-based chart rendering**, making it a realistic Business Intelligence (BI) dashboard.
+</p>
 
 ---
 
-## 3. Objectives
+# 👨‍💻 Author
 
-- Analyze Google Play Store app performance.
-- Discover trends in ratings, installs, reviews, and pricing.
-- Build interactive dashboards using Plotly & Streamlit.
-- Implement advanced filtering and business rules.
-- Generate meaningful business insights for developers and businesses.
+**Vansh Sharma**
 
 ---
 
-## 4. Tools & Technologies
+# 📌 Project Overview
 
-- Python
-- Pandas
-- NumPy
-- Plotly
-- Streamlit
-- Matplotlib
-- Jupyter Notebook
+This project is an interactive **Google Play Store Analytics Dashboard** developed using **Python, Pandas, Plotly, and Streamlit**.
 
----
+The project focuses on analyzing Android applications to extract meaningful insights related to:
 
-## 5. Dataset
+- 📱 App Performance
+- ⭐ Ratings
+- 📥 Installs
+- 💬 Reviews
+- 💰 Pricing
+- 📊 Category Trends
+- 📈 Growth Analysis
 
-- **Dataset:** Google Play Store Dataset
-- **Source:** Kaggle
-- **Format:** CSV
+The dashboard implements real-world business rules such as:
 
----
-
-## 6. Data Preprocessing
-
-- Removed duplicate records
-- Handled missing values
-- Converted data types
-- Cleaned Reviews, Installs, Price, and Size columns
-- Converted **Last Updated** to datetime format
-- Standardized categorical values
-- Applied feature engineering
-- Implemented advanced filtering conditions
+- Dynamic filtering
+- Advanced data preprocessing
+- Category translation
+- Conditional highlighting
+- Time-based visualization control
 
 ---
 
-## 7. Key Performance Indicators (KPIs)
+# 🎯 Project Objectives
 
-- Total Applications
-- Average Rating
-- Total Installs
-- Total Reviews
-- Average App Size
-- Average App Price
-- Free vs Paid Apps
-- Highest Installed Category
-- Highest Rated Category
-- Category-wise Reviews
+- Analyze Google Play Store application data.
+- Identify high-performing app categories.
+- Understand relationships between ratings, reviews, and installs.
+- Create interactive business dashboards.
+- Generate data-driven insights for decision making.
 
 ---
 
-## 8. Exploratory Data Analysis (EDA)
+# 🛠️ Technologies & Libraries Used
 
-- App Category Analysis
-- Rating Distribution
-- Reviews Analysis
-- Installs Analysis
-- Free vs Paid Analysis
-- Size Analysis
-- Price Analysis
-- Correlation Analysis
-- Time-based Analysis
+## Programming Language
+- 🐍 Python
+
+## Data Analysis
+- 🐼 Pandas
+- 🔢 NumPy
+
+## Data Visualization
+- 📊 Plotly
+- 📈 Matplotlib
+- 🎨 Seaborn
+
+## Dashboard Development
+- 🚀 Streamlit
+
+## Time & Date Handling
+- ⏰ Datetime
+- 🌎 Pytz (IST Timezone Handling)
+
+## Development Environment
+- 📓 Jupyter Notebook
+- 💻 VS Code
 
 ---
 
-## 9. Dashboard Visualizations
+# 📂 Dataset Information
 
-- Grouped Bar Chart
-- Interactive Choropleth Map
-- Dual-Axis Chart
-- Area Chart
-- Bubble Chart
-- Stacked Area Chart
+**Dataset Name:** Google Play Store Dataset
+
+**Source:** Kaggle
+
+**Format:** CSV
+
+The dataset contains application details:
+
+- App Name
+- Category
+- Rating
+- Reviews
+- Installs
+- Size
+- Type
+- Price
+- Content Rating
+- Genres
+- Last Updated
+- Current Version
+- Android Version
+
+---
+
+# 🧹 Data Preprocessing
+
+Performed following cleaning steps:
+
+✅ Removed corrupted records  
+✅ Removed duplicate applications  
+✅ Handled missing values  
+✅ Converted Installs into numerical format  
+✅ Converted Reviews into integer format  
+✅ Converted Last Updated into datetime format  
+✅ Converted App Size into MB  
+✅ Standardized categorical values  
+✅ Applied feature engineering  
 
 ---
 
 # 🚀 Tasks Implemented
 
-## ✅ Task 1 – Grouped Bar Chart
+---
 
-**Objective**
-- Compared **Average Rating** and **Total Reviews** for the **Top 10 Categories** based on installs.
+# ✅ GPA TASK 1 - Grouped Bar Chart
 
-**Conditions Applied**
-- Average Rating ≥ 4.0
+### 🎯 Objective
+
+Compared category-wise:
+
+- Average Rating
+- Total Reviews
+
+### 🔍 Conditions Applied
+
+- Rating ≥ 4.0
 - App Size ≥ 10 MB
 - Last Updated Month = January
-- Dashboard visible only between **3:00 PM – 5:00 PM IST**
+- Visualization available between **3 PM - 5 PM IST**
+
+### 📊 Visualization
+
+Grouped Bar Chart
 
 ---
 
-## ✅ Task 2 – Interactive Choropleth Map
+# ✅ GPA TASK 2 - Interactive Choropleth Map
 
-**Objective**
-- Visualized installs using an interactive Plotly Choropleth Map.
+### 🎯 Objective
 
-**Conditions Applied**
+Visualized app installs geographically using an interactive map.
+
+### 🔍 Conditions Applied
+
 - Top 5 Categories
 - Installs > 1 Million
-- Excluded categories starting with **A, C, G, S**
-- Dashboard visible only between **6:00 PM – 8:00 PM IST**
+- Excluded categories starting with:
+  - A
+  - C
+  - G
+  - S
+
+- Dashboard visible between **6 PM - 8 PM IST**
+
+### 📊 Visualization
+
+Interactive Plotly Choropleth Map
 
 ---
 
-## ✅ Task 3 – Dual Axis Chart
+# ✅ GPA TASK 3 - Dual Axis Chart
 
-**Objective**
-- Compared **Average Installs** and **Revenue** for **Free vs Paid Apps**.
+### 🎯 Objective
 
-**Conditions Applied**
-- Top 3 Categories
+Compared:
+
+- Average Installs
+- Revenue
+
+between Free and Paid applications.
+
+### 🔍 Conditions Applied
+
 - Installs > 10,000
 - Revenue > $10,000
 - Android Version > 4.0
 - App Size > 15 MB
 - Content Rating = Everyone
-- App Name ≤ 30 Characters
-- Dashboard visible only between **1:00 PM – 2:00 PM IST**
+- App Name Length ≤ 30 Characters
+
+### 📊 Visualization
+
+Dual Axis Chart
 
 ---
 
-## ✅ Task 4 – Area Chart
+# ✅ GPA TASK 4 - Area Chart
 
-**Objective**
-- Visualized monthly install growth segmented by app category.
+### 🎯 Objective
 
-**Conditions Applied**
+Analyzed monthly install growth trends by category.
+
+### 🔍 Conditions Applied
+
 - Growth > 20% Month-over-Month
 - Reviews > 500
-- App Name should not start with **X, Y, Z**
-- App Name should not contain **S**
-- Categories should start with **B, C, or E**
-- Category Translation:
-  - Beauty → Hindi
-  - Business → Tamil
-  - Dating → German
-- Dashboard visible only between **6:00 PM – 9:00 PM IST**
+- App names not starting with X, Y, Z
+- App name should not contain "S"
+- Categories starting with:
+  - B
+  - C
+  - E
+
+### 🌎 Category Translation
+
+- Beauty → Hindi
+- Business → Tamil
+- Dating → German
+
+### 📊 Visualization
+
+Area Chart
 
 ---
 
-## ✅ Task 5 – Bubble Chart
+# ✅ GPA TASK 5 - Stacked Area Chart
 
-**Objective**
-- Compared **App Size**, **Average Rating**, and **Installs**.
+### 🎯 Objective
 
-**Conditions Applied**
-- Rating > 3.5
-- Reviews > 500
-- Installs > 50,000
-- Sentiment Subjectivity > 0.5
-- Selected Categories only
-- App Name should not contain **S**
-- Highlighted **Game** category in Pink
-- Category Translation:
-  - Beauty → Hindi
-  - Business → Tamil
-  - Dating → German
-- Dashboard visible only between **5:00 PM – 7:00 PM IST**
+Visualized cumulative installs over time for different app categories.
 
----
+### 🔍 Conditions Applied
 
-## ✅ Task 6 – Stacked Area Chart
-
-**Objective**
-- Visualized cumulative installs over time.
-
-**Conditions Applied**
-- Average Rating ≥ 4.2
+- Rating ≥ 4.2
 - Reviews > 1,000
-- App Size between **20 MB – 80 MB**
-- App Name should not contain numbers
-- Categories should start with **T** or **P**
-- Category Translation:
-  - Travel & Local → French
-  - Productivity → Spanish
-  - Photography → Japanese
-- Increased color intensity when installs increased by **more than 25% Month-over-Month**
-- Dashboard visible only between **4:00 PM – 6:00 PM IST**
+- App Size between 20 MB - 80 MB
+- App names without numerical characters
+- Categories starting with:
+  - T
+  - P
+
+### 🌎 Category Translation
+
+- Travel & Local → French
+- Productivity → Spanish
+- Photography → Japanese
+
+### ⭐ Advanced Features
+
+✅ Month-wise install aggregation  
+✅ Pivot table analysis  
+✅ Cumulative install calculation  
+✅ Month-over-Month growth detection  
+✅ Highlighted periods with growth >25%  
+
+### ⏰ Time Control
+
+Visualization is displayed only between:
+
+**4 PM - 6 PM IST**
 
 ---
 
-## 11. Key Insights
+# 📊 Dashboard Visualizations
 
-- Free applications dominate the Google Play Store.
-- Game and Family categories have the highest installs.
-- Higher-rated apps generally receive more downloads.
-- Reviews positively influence app popularity.
-- Interactive dashboards provide better decision-making support.
-- Advanced filtering improves business-focused analysis.
-- Time-based dashboard rendering enhances user experience.
-
----
-
-## 12. Business Recommendations
-
-- Focus development on high-performing categories.
-- Improve ratings through user feedback.
-- Optimize pricing strategies for paid apps.
-- Monitor install growth regularly.
-- Use dashboard insights to identify market opportunities.
+| Task | Visualization |
+|---|---|
+| GPA TASK 1 | Grouped Bar Chart |
+| GPA TASK 2 | Choropleth Map |
+| GPA TASK 3 | Dual Axis Chart |
+| GPA TASK 4 | Area Chart |
+| GPA TASK 5 | Stacked Area Chart |
 
 ---
 
-## 13. Future Scope
+# 📈 Key Insights
 
-- Machine Learning for Rating Prediction
-- Install Prediction Model
-- Revenue Forecasting
-- Power BI Dashboard
-- Real-Time Data Integration
-- Cloud Deployment
+📌 Free applications dominate the Play Store ecosystem.
+
+📌 Categories with higher installs generally receive more reviews.
+
+📌 Ratings and user engagement have a strong relationship.
+
+📌 Category-wise analysis helps identify market opportunities.
+
+📌 Time-based dashboard controls improve user experience.
+
+📌 Data visualization makes complex application trends easier to understand.
 
 ---
 
-## 14. Project Structure
+# 💡 Business Recommendations
 
-```text
+🚀 Focus development on high-performing categories.
+
+⭐ Improve ratings through better user experience.
+
+📥 Monitor install growth trends regularly.
+
+💰 Optimize pricing strategies for paid applications.
+
+📊 Use analytics dashboards for better decision making.
+
+---
+
+# 🔮 Future Scope
+
+- 🤖 Machine Learning based Rating Prediction
+- 📈 Install Forecasting Model
+- 💰 Revenue Prediction
+- ☁️ Cloud Deployment
+- 🔄 Real-Time API Data Integration
+- 📊 Power BI Dashboard Development
+
+---
+
+# 📁 Project Structure
+
+```
 Google_Play_Store_Analysis/
+
 │
-├── Google_Play_Store_Analysis.ipynb
+├── GPA_TASK_1.ipynb
+├── GPA_TASK_2.ipynb
+├── GPA_TASK_3.ipynb
+├── GPA_TASK_4.ipynb
+├── GPA_TASK_5.ipynb
+│
+├── Play Store Data.csv
+├── User Reviews (1).csv
+│
 ├── app.py
-├── googleplaystore.csv
-├── README.md
+├── newssee.py
+│
 ├── requirements.txt
+├── README.md
+│
 └── Images/
 ```
- 
 
-## 📌 Note
+---
 
-This project was developed for **learning and practice purposes**. It demonstrates **data preprocessing, exploratory data analysis (EDA), interactive dashboard development, advanced business rule implementation, time-based visualization control, multilingual category translation, and business insight generation** using Python, Plotly, and Streamlit.
+# 📌 Note
 
-Author Vansh Sharma
+This project was developed for **learning and practice purposes**.
+
+It demonstrates practical skills in:
+
+- Data Cleaning
+- Data Analysis
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Dashboard Development
+- Business Rule Implementation
+- Time-Series Analysis
+- Insight Generation
+
+using Python-based analytics tools.
+
+---
+
+⭐ If you found this project useful, feel free to explore and connect!

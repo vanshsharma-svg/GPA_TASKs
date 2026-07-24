@@ -1,5 +1,4 @@
-# 📱 Google Play Store Analytics Dashboard
-
+📱 Google Play Store Data Analysis using Python
 <p align="center">
 
 ### 🚀 End-to-End Data Analytics Project using Python, Plotly & Streamlit

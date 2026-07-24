@@ -312,13 +312,6 @@ Google_Play_Store_Data_Analysis/
 │
 ├── requirements.txt
 ├── README.md
-│
-└── Images/
-    ├── gp1.png
-    ├── gp2.png
-    ├── gp3.png
-    ├── gp4.png
-    └── gp5.png
 ```
 
 ---
